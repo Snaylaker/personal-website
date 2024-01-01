@@ -1,6 +1,8 @@
 ---
 import Breadcrumbs from "@components/Breadcrumbs.astro";
-
+import { inject } from '@vercel/analytics';
+ 
+inject();
 export interface Props {
   pageTitle: string;
   pageDesc?: string;
